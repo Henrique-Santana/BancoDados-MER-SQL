@@ -26,3 +26,39 @@ USE RoteiroLivros;
 	SELECT * FROM Autores;
 	SELECT * FROM Generos;
 	SELECT * FROM Livros;
+
+	INSERT INTO Generos (Nome)
+	VALUES ('TÉCNICO'),
+		   ('EDUCAÇÃO'),
+		   ('MUSICAL'),
+		   ('COMÉDIA');
+
+	INSERT INTO Autores (Nome)
+	VALUES('LARISSA'),
+          ('MARIA'),
+		  ('CATIA FLAVIA'),
+		  ('ALEX'),
+		  ('ALEXANDRINO');
+
+	INSERT INTO Livros (Titulo, IDGenero, IDAutor)
+	VALUES ('O PASSADO QUE NÃO FOI VIVIDO',1 ,3 ),
+	       ('MER PARA INICIANTES',2,2),
+		   ('DORMIR E ACHEI QUE AINDA ESTAVA ACORDADA',5,5),
+		   ('REMOLECHION',4,4),
+		   ('BIOLOGIA DOS BICHOS',3,1);
+
+	
+	UPDATE Generos 
+	SET Nome = 'MUSICA'
+	WHERE IDGenero = 4;
+
+	UPDATE Livros
+	SET IDGenero = 1
+	WHERE IDLivro = 2;
+
+	DELETE FROM Livros
+	WHERE IDAutor = 3;
+
+	DELETE FROM Autores
+	WHERE IDAutor = 3;
+

@@ -5,3 +5,10 @@ DDL (Linguagem de definição de dados) - alguns comandos e codigo, fazer a base p
 Entidade=tabela
 
 char ocupa os espaços usados só, varchar vc declara no banco o tabmanho max
+
+
+DML -- Manipulação de dados.
+
+-incluir dados(INSERT)
+-Excluir dados(DELET)
+-Alterar dados(UPDATE)
