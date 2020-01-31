@@ -12,3 +12,47 @@ DML -- Manipulação de dados.
 -incluir dados(INSERT)
 -Excluir dados(DELET)
 -Alterar dados(UPDATE)
+
+==========================
+
+DQL -- LINGUAGEM DE CONSULTA DE DADOS.
+
+SELECT * FROM Artistas;
+SELECT Nome FROM Artista;
+
+operações < > = 
+SELECT * FROM Albuns WHERE IDAlbum = 1;
+SELECT * FROM Albuns WHERE IDAlbum > 1;
+
+ OR OU  
+
+SELECT Nome, QtdMinutos FROM Albuns
+
+
+WHERE (DataLancamento IS NULL) OR  (Localizacao IS NULL); -- SE EXISTE ALGUM CAMPO VAZIO DESTE DOIS CAMPOS SITADOS.
+
+-- FILTRO DE TEXTO
+
+  SELECT  IDArtista , Nome FROM Artistas
+  WHERE Nome LIKE '%pitty'; --começo da frase. -- FINAL DA FRASE.
+
+  SELECT  IDArtista , Nome FROM Artistas
+  WHERE Nome LIKE 'pitty%'; --começo da frase. --COMEÇO DA FRASE.
+
+  SELECT  IDArtista , Nome FROM Artistas
+  WHERE Nome LIKE '%pitty%'; --começo da frase. --MEIO DA FRASE.
+
+A pitty canta rock
+% pitty   %   rock
+
+--ORDENACAO
+SELECT IDAlbum,Nome,QtdMinutos FROM Albuns
+ORDER BY QtdMinutos;
+
+--ORDENACAO DO MENOR PARA O MEIOR.
+SELECT IDAlbum,Nome,QtdMinutos,DataLanamento FROM Albuns
+ORDER BY QtdMinutos;
+
+
+--count
+SELECT COUNT (IDAlbum) FROM Albuns;
