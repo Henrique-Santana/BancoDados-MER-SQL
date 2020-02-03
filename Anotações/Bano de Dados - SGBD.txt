@@ -1,13 +1,13 @@
-SQL Server
+SQL Server - A LINGUAGEM
 SGBD(Sistema de Gerencimento de banco de dados) - guarda e gerencia o banco de dados. mas nem todos bancos usam sgbd.
-DDL (Linguagem de definição de dados) - alguns comandos e codigo, fazer a base para os dados entrar no banco, Inicio da construção do banco "tipo uma planta de uma casa".
+DDL (estruturas)-(Linguagem de definição de dados) - alguns comandos e codigo, fazer a base para os dados entrar no banco, Inicio da construção do banco "tipo uma planta de uma casa".
 
 Entidade=tabela
 
 char ocupa os espaços usados só, varchar vc declara no banco o tabmanho max
 
 
-DML -- Manipulação de dados.
+DML -- MANIPULAÇÃO de dados.
 
 -incluir dados(INSERT)
 -Excluir dados(DELET)
