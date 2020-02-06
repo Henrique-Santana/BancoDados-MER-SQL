@@ -1,23 +1,34 @@
-CREATE DATABASE TipoMusical_Manhã;
+--CREATE DATABASE Criar o banco de daddos.
+CREATE DATABASE TipoMusical;
 
-USE TipoMusical_Manhã; 
+USE para poder usar o banco.
+USE TipoMusical; 
 
+--Sempre comecar pela tabela que tem menos chaves extrangeiras.
+
+-- CREATE TABLE para criar a tabela
 CREATE TABLE EstilosMusicais (
+-- CHAVE PRIMARIA primeiro coloca o nome da coluna, tipo "int", tipo da chave (PRIMARY KEY- chave primaria), IDENTITY para ser sequencial os dados da tabela.
  IDEstiloMsuical  INT PRIMARY KEY IDENTITY,
+-- nome da coluna, VARCHAR vc usa quando quer estipular um maximo de caracteres, NOT NULL serve para não aceitar esse campo vazio.
  Nome VARCHAR (200) NOT NULL 
  );
 
  CREATE TABLE Artistas(
  IDArtista INT PRIMARY KEY IDENTITY,
  NomeArtista VARCHAR (200) NOT NULL,
+--Chave estrangeira, nome da chave que vc quer usar, tipo, REFERENCES nome da coluna, nome da chave.
  IDEstiloMsuical int FOREIGN  KEY REFERENCES  EstilosMusicais(IDEstiloMsuical) -- REFERENCES ELE É A PONTE ENTRE UMA TABELA,, OUTRA Generos (IDGenero) NOME TABELA depois ATRIBUTO
  );
 
 
 
  --ALTERACAO ADICIONAL COLUNA
+
  -- add coluna
+--ALTER TABLE alerar alguma coluna 
 ALTER TABLE Artistas
+ADD adicionar
 ADD DataNascimento DATE;
 SELECT * FROM Artistas;
 
@@ -25,7 +36,7 @@ SELECT * FROM Artistas;
  ALTER TABLE Atistas
  MODIFY Nome CHAR;
 
- --apagar coluna e banco
+ 
  ALTER TABLE Artista
  DROP COLUMN Nome;
  SELECT * FROM 
@@ -34,52 +45,13 @@ SELECT * FROM Artistas;
  --APAGAR TABELA  
  DROP TABLE Atistas;
 
- SELECT * FROM EstilosMusicais;
+ SELECT * FROM Atistas;
 
- ALTER TABLE EstilosMusicais
- ADD Descricao VARCHAR (200);
+-- excluir banco de dados... não da para apagalo se vc estiver usando o banco. 
+DROP DATABASE nome do banco;
 
- SELECT * FROM EstilosMusicais;
- SELECT * FROM Artistas;
+USE MASTER; --SAIR DO BANCO E IR PARA O PRINCIPAL
 
- --DML LINGUAGEM DE MANIPULACAO DE DADOS
+
+
  
- --COMANDO DE INSERIS DADOS
- INSERT INTO EstilosMusicais (Nome, Descricao)
- VALUES ('PAGODE','MUSICA BRASILEIRA');
-
- INSERT INTO EstilosMusicais (Nome, Descricao)
- VALUES ('PAGODE','MUSICA BRASILEIRA'),
-		('SAMBA','MUSICA RAIZ'),
-		('COUTRY','ESTILO BOA RAPAZ');
-
-INSERT INTO Artistas (NomeArtista, IDEstiloMsuical)
-VALUES ('ZECA PAGODINHO',2),
-		('FRANK',4);
-
-
---UPDATE ALTERAR DADOS DE DENTRO DA TABELA.
-UPDATE EstilosMusicais
-SET Nome = 'FUNK'
-WHERE IDEstiloMsuical = 2;
-
---DELETE APAGAR ALGUM DADO DA TABELA
-DELETE FROM Artistas
-WHERE IDArtista = 2;
-
-SELECT * FROM Artistas;
-
-INSERT INTO  Artistas (NomeArtista, IDEstiloMsuical)
-VALUES ('SINATRA',4),
-		('GENTE BOA',3);
-
---APAGAR TODOS OS DADOS DA TABELA
-TRUNCATE TABLE ARTISTAS;
-
-CREATE VIEW WArtistas AS
-SELECT NomeArtista AS Nome,
-		IDEstiloMsuical AS CodigoEstilo
-		FROM Artistas
-
-		SELECT * FROM Artistas;
-		SELECT * FROM WArtistas;
