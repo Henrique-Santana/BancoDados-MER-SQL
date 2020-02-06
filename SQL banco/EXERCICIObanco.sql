@@ -75,3 +75,11 @@ VALUES ('SINATRA',4),
 
 --APAGAR TODOS OS DADOS DA TABELA
 TRUNCATE TABLE ARTISTAS;
+
+CREATE VIEW WArtistas AS
+SELECT NomeArtista AS Nome,
+		IDEstiloMsuical AS CodigoEstilo
+		FROM Artistas
+
+		SELECT * FROM Artistas;
+		SELECT * FROM WArtistas;
