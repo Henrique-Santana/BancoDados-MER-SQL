@@ -89,10 +89,9 @@ INSERT INTO TipoUsuario (TituloTipoUsuario)
 VALUES  ('ADM'),
 		('Paciente'),
 		('Medico');
-		SELECT * FROM TipoUsuario;
+
 INSERT INTO Usuario (Nome,Email,Senha,IDTipoUsuario,IDClinica)
 VALUES 
-		('Adiministrador', 'Adm@adm.com','adm123',2,1),
 		('Ligia',	'ligia@gmail.com' ,	'ligia123',1,1),
 		('Alexandre',	'alexandre@gmail.com',  'ale1231',1,1),
 		('Fernando'	,'fernando@gmail.com' ,  'fer1223',1,1),
@@ -122,7 +121,7 @@ VALUES  ('54356-SP', 8, 2),
 		('53452-SP', 9, 17),
 		('65463-SP', 10, 16);
 
-
+		SELECT * FROM Consulta;
 INSERT INTO Consulta (DataConsulta,Descricao,IDMedico,IDPaciente,IDSituacao)
 VALUES  ('20/01/2020 15:00', 'DES',3, 1, 2),
 		('06/01/2020 10:00', 'DES',2, 2, 1),
@@ -132,24 +131,4 @@ VALUES  ('20/01/2020 15:00', 'DES',3, 1, 2),
 		('08/03/2020 15:00', 'DES',3, 6, 3),
 		('09/03/2020 11:00', 'DES',1, 7, 3);
 
---Quantidade de usuários após realizar a importação do banco de dados.
-SELECT COUNT(*) AS TotalUsuarios FROM Usuario
 
---Alterar data de nascimento para mes dia e ano.
-SELECT CONVERT (VARCHAR(10),DataNascimento,110) AS [MM-DD-YYYY]
-FROM Paciente;
-
---MOSTRAR OS NOMES DOS MEDICOS NAS CONSULTAS
-SELECT Nome AS Médico, Descricao, DataConsulta, TituloSituacao, IdPaciente FROM Usuario
-INNER JOIN Medico ON Usuario.IdUsuario = Medico.IdUsuario
-INNER JOIN Consulta ON Consulta.IdMedico = Medico.IdMedico
-INNER JOIN Situacao ON Situacao.IdSituacao = Consulta.IdSituacao
---MOSTRAR OS NOMES DOS PACIENTES NAS CONSULTAS
-SELECT Nome AS Paciente, Descricao, DataConsulta, TituloSituacao,IdMedico FROM Usuario
-INNER JOIN Paciente ON Usuario.IdUsuario = Paciente.IdUsuario
-INNER JOIN Consulta ON Consulta.IdMedico = Paciente.IdPaciente
-INNER JOIN Situacao ON Situacao.IdSituacao = Consulta.IdSituacao
-
-
-SELECT * FROM Usuario;
-SELECT * FROM Consulta;
