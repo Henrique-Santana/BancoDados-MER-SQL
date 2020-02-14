@@ -116,12 +116,12 @@ INNER JOIN Instituicao ON Evento.IdInstituicao = Instituicao.IdInstitucao
 INNER JOIN TipoEvento ON Evento.IdEvento = TipoEvento.IdEvento
 WHERE Nome= 'Carol' AND Situacao = 'Confirmada';
 
-SELECT NomeEvento, DataEvento, Descricao, NomeFantasia, TituloTipoEvento,
+SELECT I.CNPJ, I.Endereco ,NomeEvento, DataEvento, Descricao, NomeFantasia, TituloTipoEvento,
 CASE AcessoLivre
 	 WHEN 1 THEN 'Público'
 	 WHEN 0 THEN 'Privado'
 END  AcessoLivre
 FROM Evento
-INNER JOIN Instituicao ON Evento.IdInstituicao = Instituicao.IdInstitucao 
+INNER JOIN Instituicao I ON Evento.IdInstituicao = I.IdInstitucao 
 INNER JOIN TipoEvento ON TipoEvento.IdEvento = Evento.IdEvento
 
