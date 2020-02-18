@@ -72,25 +72,58 @@ namespace senai.Filmes.WebApi.Repositories
             return generos;
         }
 
-        public List<GeneroDomain> Cadastrar()
-        {
-            // Cria uma lista generos onde serão armazenados os dados
-            List<GeneroDomain> generos = new List<GeneroDomain>();
 
-            // Declara a SqlConnection passando a string de conexão
+        public void Cadastrar(GeneroDomain genero)
+        {
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
-                // Declara a instrução a ser executada
-                string query = "INSERT INTO Generos	(Nome)";
+                //string queryInsert = "INSERT INTO Generos(Nome) VALUES (" + genero.Nome + ")";
+                string queryInsert = "INSERT INTO Generos(Nome) VALUES (@Nome)";
 
-                // Abre a conexão com o banco de dados
-                con.Open();
+                using (SqlCommand cmd = new SqlCommand(queryInsert, con))
+                {
+                    cmd.Parameters.AddWithValue("@Nome", genero.Nome);
+                    
+                    con.Open();
 
-                
-
+                    cmd.ExecuteNonQuery();
+                }
             }
+        }
 
+        public void Deletar(int id)
+        {
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                string queryDeletar = "DELETE FROM Generos WHERE idGenero = @ID";
+                using (SqlCommand cmd = new SqlCommand(queryDeletar,con))
+                {
+                    cmd.Parameters.AddWithValue("@ID", id);
 
+                    con.Open();
+
+                    cmd.EndExecuteNonQuery();
+                }
+            }
+        }
+
+        public void AtualizarIdCorpo(GeneroDomain genero)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AtualizarIdUrl(int id, GeneroDomain genero)
+        {
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                string queryAtualizar = "UPDATE Generos SET Nome = @Nome WHERE IdGenero = @ID";
+
+                using (SqlCommand cmd = new SqlCommand(queryAtualizar, con))
+                {
+                    cmd.Parameters.AddWithValue("@ID", id);
+                    cmd.Parameters.AddWithValue("@Nome", genero);
+                }
+            }
         }
     }
 }

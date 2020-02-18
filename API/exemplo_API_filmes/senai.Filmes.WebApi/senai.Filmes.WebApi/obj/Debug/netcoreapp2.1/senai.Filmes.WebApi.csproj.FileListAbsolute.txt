@@ -26,3 +26,17 @@ C:\Users\47651807863\Desktop\senai\Backend_Sprint2\exemplo_API_filmes\senai.Film
 C:\Users\47651807863\Desktop\senai\Backend_Sprint2\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\47651807863\Desktop\senai\Backend_Sprint2\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.dll
 C:\Users\47651807863\Desktop\senai\Backend_Sprint2\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.pdb
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.deps.json
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.runtimeconfig.json
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.runtimeconfig.dev.json
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.dll
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.pdb
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.csprojAssemblyReference.cache
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorAssemblyInfo.cache
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorAssemblyInfo.cs
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.AssemblyInfoInputs.cache
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.AssemblyInfo.cs
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.dll
+C:\Users\47651807863\Desktop\senai\BancoDados-SQL\API\exemplo_API_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.pdb

@@ -27,7 +27,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <summary>
         /// Cria um objeto _generoRepository que irá receber todos os métodos definidos na interface
         /// </summary>
-        private IGeneroRepository _generoRepository { get; set; }
+        private IGeneroRepository _generoRepository { get; set;  }
 
         /// <summary>
         /// Instancia este objeto para que haja a referência aos métodos no repositório
@@ -48,5 +48,25 @@ namespace senai.Filmes.WebApi.Controllers
             // Faz a chamada para o método .Listar();
             return _generoRepository.Listar();
         }
+
+        [HttpPost]
+        public IActionResult Post (GeneroDomain generoRecebido)
+        {
+            _generoRepository.Cadastrar(generoRecebido);
+
+            //return ok(); status code 200;
+            return StatusCode(201); //Status StatusCode 201 - created
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            _generoRepository.Deletar(id);
+
+            return NoContent();
+        }
+
+        [HttpPut("{id}")]
+
     }
 }
