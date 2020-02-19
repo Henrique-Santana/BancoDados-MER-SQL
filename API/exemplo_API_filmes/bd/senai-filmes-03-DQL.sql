@@ -1,4 +1,5 @@
 USE Filmes_manha;
+GO
 
 SELECT * FROM Generos;
 SELECT * FROM Filmes;

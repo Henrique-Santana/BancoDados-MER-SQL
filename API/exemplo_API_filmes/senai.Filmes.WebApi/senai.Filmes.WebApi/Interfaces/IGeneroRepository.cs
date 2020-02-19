@@ -17,26 +17,36 @@ namespace senai.Filmes.WebApi.Interfaces
         /// <returns>Retorna uma lista de gêneros</returns>
         List<GeneroDomain> Listar();
 
-        //retorno nomeMetodo(Parâmetro);
         /// <summary>
-        /// Cadastra um novo genero
+        /// Cadastra um novo gênero
         /// </summary>
-        /// <param name="genero">Objeto genero que sera cadastrado</param>
+        /// <param name="genero">Objeto genero que será cadastrado</param>
         void Cadastrar(GeneroDomain genero);
 
         /// <summary>
-        /// Deletar um gênero
+        /// Atualiza um gênero existente passando o id pelo corpo da requisição
         /// </summary>
-        /// <param name="id">ID de gênero que era deletado</param>
-        void Deletar(int id);
-
+        /// <param name="genero">Objeto genero que será atualizado</param>
         void AtualizarIdCorpo(GeneroDomain genero);
 
         /// <summary>
-        /// Atualizar um Genero existente
+        /// Atualiza um gênero existente passando o id pela url da requisição
         /// </summary>
-        /// <param name="id">ID do genêro que sera atualizado</param>
-        /// <param name="genero">Objeto genero que sera atualizado</param>
+        /// <param name="id">ID do gênero que será atualizado</param>
+        /// <param name="genero">Objeto genero que será atualizado</param>
         void AtualizarIdUrl(int id, GeneroDomain genero);
+
+        /// <summary>
+        /// Deleta um gênero
+        /// </summary>
+        /// <param name="id">ID do gênero que será deletado</param>
+        void Deletar(int id);
+
+        /// <summary>
+        /// Busca um gênero através do ID
+        /// </summary>
+        /// <param name="id">ID do gênero que será buscado</param>
+        /// <returns>Retorna um genero</returns>
+        GeneroDomain BuscarPorId(int id);
     }
 }
