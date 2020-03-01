@@ -12,3 +12,17 @@ E:\Works\senai_132\senai-dev-1s2020\sprint-2-backend\exercicios\peoples\senai.Pe
 E:\Works\senai_132\senai-dev-1s2020\sprint-2-backend\exercicios\peoples\senai.Peoples.WebApi\senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\senai.Peoples.WebApi.pdb
 E:\Works\senai_132\senai-dev-1s2020\sprint-2-backend\exercicios\peoples\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.dll
 E:\Works\senai_132\senai-dev-1s2020\sprint-2-backend\exercicios\peoples\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.pdb
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\senai.Peoples.WebApi.deps.json
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\senai.Peoples.WebApi.runtimeconfig.json
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\senai.Peoples.WebApi.runtimeconfig.dev.json
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\senai.Peoples.WebApi.dll
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\senai.Peoples.WebApi.pdb
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.csprojAssemblyReference.cache
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.csproj.CoreCompileInputs.cache
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.RazorAssemblyInfo.cache
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.RazorAssemblyInfo.cs
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.AssemblyInfoInputs.cache
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.AssemblyInfo.cs
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.RazorTargetAssemblyInfo.cache
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.dll
+D:\Henrique\SENAI\2º sem\banco\BancoDados-SQL\API\peoples-senai\senai.Peoples.WebApi\senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\senai.Peoples.WebApi.pdb

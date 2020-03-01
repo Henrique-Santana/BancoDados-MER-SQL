@@ -15,7 +15,7 @@ namespace senai.Peoples.WebApi.Domains
 
         public string Senha { get; set; }
 
-        public string IdTipoUsuario { get; set; }
+        public int IdTipoUsuario { get; set; }
 
         public TipoUsuarioDomain TipoUsuario { get; set; }
 

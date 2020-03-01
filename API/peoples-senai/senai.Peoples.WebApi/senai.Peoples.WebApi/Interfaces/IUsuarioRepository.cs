@@ -9,43 +9,43 @@ namespace senai.Peoples.WebApi.Interfaces
     interface IUsuarioRepository
     {
         /// <summary>
-        /// Lista todos os funcionários
+        /// Lista todos os Usuarios
         /// </summary>
-        /// <returns>Retorna uma lista de funcionários</returns>
-        List<FuncionarioDomain> Listar();
+        /// <returns>Retorna uma lista de Usuarios</returns>
+        List<UsuarioDomain> Listar();
 
         /// <summary>
-        /// Busca um funcionário através do ID
+        /// Busca um Usuario através do ID
         /// </summary>
-        /// <param name="id">ID do funcionário que será buscado</param>
-        /// <returns>Retorna um funcionário buscado</returns>
-        FuncionarioDomain BuscarPorId(int id);
+        /// <param name="id">ID do Usuario que será buscado</param>
+        /// <returns>Retorna um Usuario buscado</returns>
+        UsuarioDomain BuscarPorId(int id);
 
         /// <summary>
-        /// Cadastra um novo funcionário
+        /// Cadastra um novo Usuario
         /// </summary>
-        /// <param name="novoFuncionario">Objeto novoFuncionario que será cadastrado</param>
-        void Cadastrar(FuncionarioDomain novoFuncionario);
+        /// <param name="novoUsuario">Objeto novoUsuario que será cadastrado</param>
+        void Cadastrar(UsuarioDomain novoUsuario);
 
         /// <summary>
-        /// Atualiza um funcionário existente
+        /// Atualiza um Usuario existente
         /// </summary>
-        /// <param name="id">ID do funcionário que será atualizado</param>
-        /// <param name="funcionarioAtualizado">Objeto funcionarioAtualizado que será atualizado</param>
-        void Atualizar(int id, FuncionarioDomain funcionarioAtualizado);
+        /// <param name="id">ID do Usuario que será atualizado</param>
+        /// <param name="UsuarioAtualizado">Objeto funcionarioAtualizado que será atualizado</param>
+        void Atualizar(int id, UsuarioDomain UsuarioAtualizado);
 
         /// <summary>
-        /// Deleta um funcionário existente
+        /// Deleta um Usuario existente
         /// </summary>
-        /// <param name="id">ID do funcionário que será deletado</param>
+        /// <param name="id">ID do Usuario que será deletado</param>
         void Deletar(int id);
 
 
         /// <summary>
-        /// Lista todos os funcionários de maneira ordenada pelo nome
+        /// Lista todos os Usuarios de maneira ordenada pelo nome
         /// </summary>
         /// <param name="ordem">String que define a ordenação (crescente ou descrescente)</param>
-        /// <returns>Retorna uma lista ordenada de funcionários</returns>
-        List<FuncionarioDomain> ListarOrdenado(string ordem);
+        /// <returns>Retorna uma lista ordenada de Usuarios</returns>
+        List<UsuarioDomain> ListarOrdenado(string ordem);
     }
 }

@@ -12139,23 +12139,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\47651807863\\.nuget\\packages\\": {},
+    "C:\\Users\\Sala de Video\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47651807863\\Desktop\\senai\\Backend_Sprint2\\exemplo_filmes-senai\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj",
+      "projectUniqueName": "D:\\Henrique\\SENAI\\2º sem\\banco\\BancoDados-SQL\\API\\exemplo_filmes-senai\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj",
       "projectName": "senai.Filmes.WebApi",
-      "projectPath": "C:\\Users\\47651807863\\Desktop\\senai\\Backend_Sprint2\\exemplo_filmes-senai\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj",
-      "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47651807863\\Desktop\\senai\\Backend_Sprint2\\exemplo_filmes-senai\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\obj\\",
+      "projectPath": "D:\\Henrique\\SENAI\\2º sem\\banco\\BancoDados-SQL\\API\\exemplo_filmes-senai\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj",
+      "packagesPath": "C:\\Users\\Sala de Video\\.nuget\\packages\\",
+      "outputPath": "D:\\Henrique\\SENAI\\2º sem\\banco\\BancoDados-SQL\\API\\exemplo_filmes-senai\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\47651807863\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sala de Video\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
