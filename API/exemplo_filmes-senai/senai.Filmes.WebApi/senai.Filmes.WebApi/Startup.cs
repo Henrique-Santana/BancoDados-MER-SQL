@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 namespace senai.Filmes.WebApi
 {
@@ -22,6 +25,14 @@ namespace senai.Filmes.WebApi
             // Define a versão do .NET Core
             .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "senai.Filmes.WebApi", Version = "v1" });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
 
             services
                 // Define a forma de autenticação
@@ -68,11 +79,17 @@ namespace senai.Filmes.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            // Habilita o uso de autenticação
-            app.UseAuthentication();
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "senai.Filmes.WebApi");
+            });
 
             // Habilita o uso do MVC
             app.UseMvc();
+
+            
         }
     }
 }
